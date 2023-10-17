@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatorial</title>
+    
+</head>
+<body>
+<h4> RESULTADO </h4>
+<script type="text/javascript">
+var numero
+var soma = 1; //declaração da variavel
+
+numero = prompt("Digite um número para calcular o fatorial:");
+
+function calcularFatorial(numero) {
+
+while(numero > 0) { // Faz a repetição enquanto  o número for maior que 0
+    soma = soma *= numero; //Multiplica a variável soma pelo valor atual de numero
+    numero --; // decrementa a cada vez que passa pelo lop
+}
+return soma; //retorna o valor da soma final
+
+}
+
+var resultado = calcularFatorial(numero); //guarda a variavel numero em resultado e mostra na tela
+document.write("O fatorial é: " + resultado);
+
+
+
+
+</script>
+
+
+    
+</body>
+</html>
